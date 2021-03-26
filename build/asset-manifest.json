@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/BMO-Zomato-Restaurant/static/css/main.f79e5c9c.chunk.css",
+    "main.js": "/BMO-Zomato-Restaurant/static/js/main.84f8c3c5.chunk.js",
+    "runtime-main.js": "/BMO-Zomato-Restaurant/static/js/runtime-main.a723e2f8.js",
+    "static/js/2.bea50254.chunk.js": "/BMO-Zomato-Restaurant/static/js/2.bea50254.chunk.js",
+    "index.html": "/BMO-Zomato-Restaurant/index.html",
+    "precache-manifest.0e95c8115367c6881ec26ad0676d81ac.js": "/BMO-Zomato-Restaurant/precache-manifest.0e95c8115367c6881ec26ad0676d81ac.js",
+    "service-worker.js": "/BMO-Zomato-Restaurant/service-worker.js",
+    "static/js/2.bea50254.chunk.js.LICENSE.txt": "/BMO-Zomato-Restaurant/static/js/2.bea50254.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a723e2f8.js",
+    "static/js/2.bea50254.chunk.js",
+    "static/css/main.f79e5c9c.chunk.css",
+    "static/js/main.84f8c3c5.chunk.js"
+  ]
+}
