@@ -31,18 +31,25 @@ const getLocationLatitude = (city) => {
                 "content-type": "application/json"
 
             }
-            
+
         })
             .then(response => {           
                 //console.log(response)
+
                 let long = response.data.location_suggestions[0].longitude;
+
                 let lati = response.data.location_suggestions[0].latitude;
+
                 let cityId = response.data.location_suggestions[0].city_id;
+
                 // console.log(long,lati)
+
                 return (
                     {
                         "long": long,
+
                         "lati": lati,
+
                         "cityId": cityId,
                     }
                 );
@@ -50,13 +57,20 @@ const getLocationLatitude = (city) => {
 
 ****************
 
-axios({
+            axios({
+
                         method: "GET",
+
                         url: `https://developers.zomato.com/api/v2.1/search?entity_id=${response.cityId}&entity_type=city&start=1&count=20&lat=${response.lati}&lon=${response.long}`,
+
                         headers: {
+
                             "user-key": "ff4f897b8bc0d97ccd3ed25a6b951fd3",
+
                             "content-type": "application/json"
+
                         }
+                        
                     })
 
 ## 3. How would you track down a performance issue in production? Have you ever had to do this?
