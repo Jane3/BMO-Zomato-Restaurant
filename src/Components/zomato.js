@@ -14,11 +14,10 @@ export default function Zomato() {
         responseStatus: 'Please enter your location to search the nearby Zomato Restaurants'
     })
 
-    const handleChangeRest =(searchQuery)=>(e)=>{
+    const handleChangeRest =(e)=>{
         setState({
             ...state,
             searchRest: e.target.value,
-            //[searchQuery]: query
         });
     }
 
@@ -26,8 +25,7 @@ export default function Zomato() {
     const clearSearch =() =>{
         setState({
             ...state,
-            searchRest : "",
-            searchCuisine:""
+            searchRest: " "
         })
     }
 
@@ -65,7 +63,7 @@ export default function Zomato() {
     // search the nearby restaurents by using the city ID/Name, Longitude and Latitude retrieved from the function getLocationLatitude
     const searchRestaurant = async (event) => {
         const query = event.target.value;
-        console.log(query); 
+        //console.log(query); 
         if (event.key === 'Enter') {
             setState({
                 ...state,
@@ -106,13 +104,12 @@ export default function Zomato() {
                                 restaurantData = {}
                             }
 
-                            for(var i of restaurantList){
-                                if(i.cuisines.includes("Sandwich")){
-                                    console.log("looo");
-                                }
-                            }
+                            // for(var i of restaurantList){
+                            //     if(i.cuisines.includes("Sandwich")){
+                            //         console.log("looo");
+                            //     }
+                            // }
 
-                            //console.log(restaurantList);
 
                             setState({
                                 ...state,
@@ -202,9 +199,9 @@ export default function Zomato() {
                
                 <input  className="searchbar"
                    type="text" 
-                   value={state.searchCuisine}
+                   value={state.searchRest}
                    onChange={handleChangeRest}
-                   placeholder="Search Cuisines"
+                   placeholder="Search City"
                    onKeyPress={searchRestaurant} 
                 />
 
