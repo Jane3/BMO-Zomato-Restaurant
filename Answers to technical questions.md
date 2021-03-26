@@ -16,7 +16,7 @@ If I were given more time, I would add more features as listed below:
 The most useful feature I used was to find the longitude and latitude of the city in order to better search the nearby restaurants based on the city user has entered. I then included the longitude and latitude values into the API to search for restaurants in the city user has chosen. 
 
 *****************
-const getLocationLatitude = (city) => {
+    const getLocationLatitude = (city) => {
 
         return axios({
 
@@ -70,7 +70,7 @@ const getLocationLatitude = (city) => {
                             "content-type": "application/json"
 
                         }
-                        
+
                     })
 
 ## 3. How would you track down a performance issue in production? Have you ever had to do this?
