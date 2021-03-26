@@ -17,13 +17,21 @@ The most useful feature I used was to find the longitude and latitude of the cit
 
 *****************
 const getLocationLatitude = (city) => {
+
         return axios({
+
             method: "GET",
+
             url: `https://developers.zomato.com/api/v2.1/locations?query=${city}`,
+
             headers: {
+
                 "user-key": "ff4f897b8bc0d97ccd3ed25a6b951fd3",
+
                 "content-type": "application/json"
+
             }
+            
         })
             .then(response => {           
                 //console.log(response)
@@ -38,7 +46,6 @@ const getLocationLatitude = (city) => {
                         "cityId": cityId,
                     }
                 );
-
             })
 
 ****************
