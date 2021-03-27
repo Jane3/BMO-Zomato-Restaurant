@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -22,4 +21,4 @@ clone the project install all the required dependencies in your local machine us
 ```npm install``` and  then run  the with ```npm start``` command.
 
 ### Demo
-[App Demo](https://zomato.learnreact.ml)
+[App Demo](https://bmo-zomato-restaurant.herokuapp.com/)
